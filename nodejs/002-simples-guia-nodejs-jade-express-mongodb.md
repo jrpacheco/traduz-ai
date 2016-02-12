@@ -40,7 +40,7 @@ Agora que temos o Node rodando, nós precisamos do resto das coisas para criar, 
 
 ```sh
 
-$ npm install -g express
+$ npm install express-generator -g
 
 ```
 
@@ -54,7 +54,7 @@ De qualquer forma, continue no seu diretório onde está armazenando sua aplica�
 
 ```sh
 
-$ express --sessions nodetest1
+$ express nodetest1
 
 ```
 
@@ -62,27 +62,30 @@ Aperte enter e veja o que acontece. Irá aparecer algo como isso:
 
 ```sh
 
-eo_op:~/estudos/nodejs $ express --sessions nodetest1
-create : nodetest1
-create : nodetest1/package.json
-create : nodetest1/app.js
-create : nodetest1/routes
-create : nodetest1/routes/index.js
-create : nodetest1/routes/user.js
-create : nodetest1/views
-create : nodetest1/views/layout.jade
-create : nodetest1/views/index.jade
-create : nodetest1/public/images
-create : nodetest1/public/javascripts
-create : nodetest1/public
-create : nodetest1/public/stylesheets
-create : nodetest1/public/stylesheets/style.css
+ create : nodetest1
+   create : nodetest1/package.json
+   create : nodetest1/app.js
+   create : nodetest1/public
+   create : nodetest1/views
+   create : nodetest1/views/index.jade
+   create : nodetest1/views/layout.jade
+   create : nodetest1/views/error.jade
+   create : nodetest1/routes
+   create : nodetest1/routes/index.js
+   create : nodetest1/routes/users.js
+   create : nodetest1/public/stylesheets
+   create : nodetest1/public/stylesheets/style.css
+   create : nodetest1/bin
+   create : nodetest1/bin/www
 
-install dependencies:
-$ cd nodetest1 && npm install
+   install dependencies:
+     $ cd nodetest1 && npm install
 
-run the app:
-$ node app
+   run the app:
+     $ SET DEBUG=nodetest1:* & npm start
+
+   create : nodetest1/public/images
+   create : nodetest1/public/javascripts
 
 ```
 
